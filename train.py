@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 from joblib import dump
-from utils import clean_text
+from util import clean_text
 
 df = pd.read_csv("data/processed/reviews_clean.csv")  # pastikan ada kolom text, label
 X = df["text"].astype(str).apply(clean_text)
