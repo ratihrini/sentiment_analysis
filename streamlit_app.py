@@ -1,6 +1,6 @@
 import streamlit as st
 from joblib import load
-from src.utils import clean_text
+from util import clean_text
 
 st.set_page_config(page_title="Sentiment Analysis", page_icon="🔎")
 
